@@ -7,30 +7,6 @@ function findLatestNonOverlapping(intervals, index) {
   return -1;
 }
 
-// export default function findMaxWeightedSchedule(intervals) {
-//   if (intervals.length === 0) {
-//     return 0;
-//   }
-//   intervals.sort((a, b) => a.end - b.end);
-
-//   const n = intervals.length;
-//   const dp = new Array(n);
-
-//   dp[0] = intervals[0].weight;
-
-//   for (let i = 1; i < n; i++) {
-//     const latest = findLatestNonOverlapping(intervals, i);
-
-//     const includeWeight =
-//       intervals[i].weight + (latest !== -1 ? dp[latest] : 0);
-//     const excludeWeight = dp[i - 1];
-
-//     dp[i] = Math.max(includeWeight, excludeWeight);
-//   }
-
-//   return dp[n - 1];
-// }
-
 export default function findMaxWeightedSchedule(intervals) {
   if (intervals.length === 0) {
     return 0;
