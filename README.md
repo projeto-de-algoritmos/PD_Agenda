@@ -1,45 +1,69 @@
-**!! Atenção: Renomeie o seu repositório para (Tema)_(NomeDoProjeto). !!** 
+# Agenda
 
-Temas:
- - Grafos1
- - Grafos2
- - PD
- - D&C
- - Greed
- - Final 
- 
- **!! *Não coloque os nomes dos alunos no título do repositório*. Exemplo de título correto: Grafos2_Labirinto-do-Minotauro !!**
- 
- (Apague essa seção)
-
-# NomedoProjeto
-
-**Número da Lista**: X<br>
-**Conteúdo da Disciplina**: XXXXXXXXXX<br>
+**Número da Lista**: 48<br>
+**Conteúdo da Disciplina**: PD<br>
 
 ## Alunos
-|Matrícula | Aluno |
-| -- | -- |
-| xx/xxxxxx  |  xxxx xxxx xxxxx |
-| xx/xxxxxx  |  xxxx xxxx xxxxx |
 
-## Sobre 
-Descreva os objetivos do seu projeto e como ele funciona. 
+| Matrícula  | Aluno                      |
+| ---------- | -------------------------- |
+| 19/0015721 | Júlio César Martins França |
+
+## Sobre
+
+O objetivo deste projeto é utilizar o algoritmo Weighted Interval Scheduling para criar uma agenda que leve em consideração não apenas a sobreposição de horários, mas também o peso atribuído a cada tarefa. A agenda apresentará as tarefas que precisam ser realizadas para obter o maior peso possível, que pode ser representado por um valor monetário, por exemplo.
 
 ## Screenshots
-Adicione 3 ou mais screenshots do projeto em funcionamento.
 
-## Instalação 
-**Linguagem**: xxxxxx<br>
-**Framework**: (caso exista)<br>
-Descreva os pré-requisitos para rodar o seu projeto e os comandos necessários.
+<img src="img/Screenshot_1.png">
+<img src="img/Screenshot_2.png">
+<img src="img/Screenshot_3.png">
 
-## Uso 
-Explique como usar seu projeto caso haja algum passo a passo após o comando de execução.
+## Instalação
 
-## Outros 
-Quaisquer outras informações sobre seu projeto podem ser descritas abaixo.
+**Linguagem**: JavaScript<br>
+**Framework**: Next.js<br>
 
+### Pré-requisitos
 
+- Ter o [Node.js](https://nodejs.org/en) instalado
+- Foi utilizada a v18.16.0 nesse projeto
 
+### Como rodar o projeto
 
+Depois de clonar o repositório:
+
+- Entrar no diretório "agenda"
+
+```
+cd agenda/
+```
+
+- Instalar as dependências
+
+```
+npm install
+```
+
+- Rodar o projeto
+
+```
+npm run dev
+```
+
+O projeto será aberto no link http://localhost:3000/
+
+## Uso
+
+- Após adicionar pelo menos uma tarefa aparecerá o botão GERAR AGENDA
+- Clique em GERAR AGENDA para visualizar as tarefas selecionadas e o peso total
+
+## Outros
+
+O vídeo de apresentação se encontra no diretório video.
+
+Após entrar ou voltar para o diretório principal:
+
+```
+cd video/
+```
