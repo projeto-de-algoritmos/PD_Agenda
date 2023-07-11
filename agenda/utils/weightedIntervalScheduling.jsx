@@ -9,7 +9,10 @@ function findLatestNonOverlapping(intervals, index) {
 
 export default function findMaxWeightedSchedule(intervals) {
   if (intervals.length === 0) {
-    return 0;
+    return {
+      maxWeight: 0,
+      intervals: [],
+    };
   }
   intervals.sort((a, b) => a.end - b.end);
 
